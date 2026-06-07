@@ -8,59 +8,60 @@ import friend6 from '../assets/friend6.jpg'
 import friend7 from '../assets/friend7.jpg'
 import friend8 from '../assets/friend8.jpg'
 import friend9 from '../assets/friend9.jpg'
+import type {Hero} from "./types";
 
 export const baseUrl = 'https://sw-info-api.herokuapp.com';
 export const version = '/v1';
-export const characters = {
+export const characters: Record<string, Hero> = {
     luke: {
         name: "Luke Skywalker",
         img: friend0,
-        url: `${baseUrl+version}/peoples/1`
+        url: `${baseUrl + version}/peoples/1`
     },
-    c3po:{
+    c3po: {
         name: "C-3PO",
         img: friend2,
-        url: `${baseUrl+version}/peoples/2`
+        url: `${baseUrl + version}/peoples/2`
     },
-    r2d2:{
+    r2d2: {
         name: "R2-D2",
         img: friend1,
-        url: `${baseUrl+version}/peoples/3`
+        url: `${baseUrl + version}/peoples/3`
     },
-    leia:{
+    leia: {
         name: "Leia Organa",
         img: friend9,
-        url: `${baseUrl+version}/peoples/5`
+        url: `${baseUrl + version}/peoples/5`
     },
-    obi_wan:{
+    obi_wan: {
         name: "Obi-Wan Kenobi",
         img: friend8,
-        url: `${baseUrl+version}/peoples/10`
+        url: `${baseUrl + version}/peoples/10`
     },
-    chewbacca:{
+    chewbacca: {
         name: "Chewbacca",
         img: friend4,
-        url: `${baseUrl+version}/peoples/13`
+        url: `${baseUrl + version}/peoples/13`
     },
-    han_solo:{
+    han_solo: {
         name: "Han Solo",
         img: friend5,
-        url: `${baseUrl+version}/peoples/14`
+        url: `${baseUrl + version}/peoples/14`
     },
-    yoda:{
+    yoda: {
         name: "Yoda",
         img: friend6,
-        url: `${baseUrl+version}/peoples/0`
+        url: `${baseUrl + version}/peoples/0`
     },
-    ewok:{
+    ewok: {
         name: "Wicket Systri Warrick",
         img: friend3,
-        url: `${baseUrl+version}/peoples/30`
+        url: `${baseUrl + version}/peoples/30`
     },
-    falcon:{
+    falcon: {
         name: "Millennium Falcon",
         img: friend7,
-        url: `${baseUrl+version}/transports/10`
+        url: `${baseUrl + version}/transports/10`
     }
 };
 export const defaultHero = 'luke';
